@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>belajar</title>
+		<style>
+			.jenis {
+				font-weight: bold;
+			}
+			.kotak {
+				width: 35em;
+				border: 1px solid #333;
+				box-shadow: 8px 8px 5px #444;
+				padding: 8px 12px;
+				background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+			}
+			span {
+				color:red;
+			}/*nah contoh type selector,,jadi menggunakan nama element untuk menetapkan rule*/
+			/*dibawah ini contoh class selector,,jadi menggunakan atribute untuk menetapkan rule*/
+			.red {
+				color:blue;
+			}
+			.skyblue-bg {
+				background-color: skyblue;
+			}
+			.fancy{
+				font-weight: bold;
+				text-shadow: 4px 4px 3px #77f;
+			}
+			h3.fancy{
+				text-shadow: 4px 4px 3px #00c8eb;
+			}
+			/*dibawah adalah contoh id selector,,in berdasarkan dari nilai atribut id yang bisa di gunakan di element div*/
+			#special{
+				background-color: blue;
+			}
+			/* <a> element yang menerapkan href attribut */
+				a[href] {
+           color: blue;
+       }
+	   /*contoh atribute selector*/
+       /* <a> element yang menerapkan nilai pada href dengan awalan "#" */
+       a[href^="#"] {
+           background-color: gold;
+       }
+ 
+       /* <a> element yang menerapkan nilai pada href yang mengandung teks "example" */
+       a[href*="example"] {
+           background-color: silver;
+       }
+ 
+       /* <a> element yang menerapkan nilai pada href yang mengandung teks "insensitive" tidak mementingkan huruf kapital*/
+       a[href*="insensitive" i] {
+           color: cyan;
+       }
+ 
+       /* <a> element yang menerapkan nilai pada href dengan akhiran ".org" */
+       a[href$=".org"] {
+           color: red;
+       }
+	   /*contoh selector universal*/
+	   /* Menargetkan seluruh tipe elemen */
+       * {
+           color: green;
+       }
+/* Menargetkan seluruh tipe elemen yang mengandung nilai "en" pada atribut lang */
+ 
+       *[lang^=en] {
+           font-style: italic;
+       }
+ 
+       /* Menargetkan seluruh tipe elemen yang memiliki nilai "warning" pada atribut class */
+       *.warning {
+           color: red;
+       }
+ 
+       /* Menargetkan seluruh tipe elemen yang memiliki nilai "content" pada atribut id */
+       *#content {
+           border: 1px solid blue;
+           padding: 20px;
+       }
+		</style>
+	</head>
+<body>
+	<img src="https://i.imgur.com/EUUXQcf.png" alt="dicoding" title="Dicoding wae :)" widht="500px" height="120px">
+	<img src="image/anime.jpg" alt="Ini Gambar Nao :)" title="kawaii :)">
+<hr>
+<header>
+<h1>DAFTAR ISI</h1>
+<p>INI ADALAH DAFTAR ISI</p>
+<nav>
+<ul>
+	<li><a href="#bulan">List Nama <span class="jenis">Bulan</span></a></li>
+	<li><a href="#hari">List Nama Hari</a></li>
+	<li><a href="#campur">List Campur</a></li>
+</nav>
+</div>
+</header>
+<blockquote cite="https://id.wikipedia.org/wiki/Situs_web">
+<p> Situs web (bahasa Inggris: website)<span> adalah sekumpulan halaman web yang saling berhubungan yang umumnya   berada pada peladen yang sama berisikan kumpulan informasi yang disediakan secara perorangan, kelompok, atau organisasi.</span></p>
+</blockquote>
+<h1>Belajar List</h1>
+<h2 id="bulan">List Nama Bulan</h2>
+<ul>
+	<li><span class="jenis">November</span></li>
+	<li>Januari</li>
+	<li>Oktober</li>
+</ul>
+<h2 id="hari">List Nama Hari</h2>
+<ol start="10" reversed>
+	<li>senin</li>
+	<li>selasa</li>
+	<li>rabu</li>
+</ol>
+<h2 id="campur">List Campur</h2>
+<ul>
+<li>Buah</li>
+<p class="skyblue-bg">Buah adalah salah satu makanan yang suka <mark>dimakan oleh masnusia</mark>,Buah kebagi Menjadi dua macam yaitu buah manis dan masam :)</p>
+<ol>
+	<li>Manggis</li>
+	<li>Mangga</li>
+	<li>Pisang</li>
+</ol>
+<li>Sayur</li>
+<p><strong>Sayur</strong> adalah sebuah bahan <em>makanan</em> yang suka <dfn>dioalah manusia</dfn> sebagai sebuah objek yang bisa dimakan dengan banyak jenis resep :)</p>
+<ol>
+	<li>Sawi</li>
+	<li>Seladah</li>
+	<li>Kangkung</li>
+</ol>
+</ul>
+<p class="red">saya kan udah bialang <q>Kalo suka sama orang tuh ungkapin</q> biar gak jadi beban pikiran <cite><a href="https://id-id.facebook.com/">FaceBook</a></cite></p>
+<h3>SAJAK</h3>
+<figure>
+	<div class="kotak">
+<pre class="fancy">
+				Kursi Depan
+	Entah kepuasan atau kebahagian...
+	Ketika diriku melihat wajahmu...
+	Wajah yang begitu cantik...
+	Senyum yang membuat diriku berbunga...
+	Bahkan dunia ikut merasakan apa yang ku alami...
+		Ketika engakau mengajak ku bicara...
+		Entah kenapa mulutku tersa berat...
+		Pandanganku takluput dari tipisnya bibir itu..
+</pre>
+</div>
+	<figcaption>Sajak Kursi Depan oleh Aim05</figcaption>
+</figure>
+<div id="special">
+	<p>ini merupakan konten di dalam sebuah div yang di beri id spicial</p>
+</div>
+<ul>
+	<li><a href="#internal">Internal link</a></li>
+	<li><a href="http://example.com">Example link</a></li>
+	<li><a href="#InSensitive">Insensitive internal link</a></li>
+	<li><a href="http://example.org">Example org link</a></li>
+</ul>
+<table border="1">
+	<tr>
+		<th rowspan="4"><img src="image/neko.jpg" width="150px" height="120px"></th>
+		<th>Nama</th>
+		<th>NIM</th>
+		<th>Alamat</th>
+		<th>NO.Telpon</th>
+	</tr>
+	<tr>
+		<td>Rohim Kurniawan</td>
+		<td>10200041</td>
+		<td>Garut</td>
+		<td>081381755824</td>
+	</tr>
+	<tr>
+		<td>Qurroa 'Ayun H.P</td>
+		<td>10200043</td>
+		<td>Lampung</td>
+		<td>08123456789</td>
+	</tr>
+	<tr>
+		<td>Gloria Wiradikazai</td>
+		<td>10200089</td>
+		<td>Nias</td>
+		<td>08123456789</td>
+	</tr>
+</table>
+<h3 class="fancy">saya belajar dengan sungguh sungguh</h3>
+<p class="fancy">WEB INI DIBUAT UNTUK MEMPERDALAM ILMU SAYA<sub>paham</sub>NAH KALO SUDAH FAHAM MOHON DI<sup>yaaa :)</sup></p>
+<p lang="en-us">This is an English paragraph contains en-us value of lang attribute, so this text will be green and
+	italic.</p>
+  
+ <h1>Ini merupakan sebuah header biasa</h1>
+ <h1 lang="en-us">This is an English Header</h1>
+  
+ <p class="warning">Perhatikan paragraf ini! Paragraf ini merupakan paragraf yang memiliki kelas bernilai warning,
+	sehingga teks dari paragraf ini akan berwarna merah</p>
+  
+ <div id="content">
+	<p>Ini merupakan sebuah teks di dalam sebuah div yang memiliki id bernilai "content", seharusnya paragraf ini
+		dibungkus dalam border yang memiliki padding 20px</p>
+ </div>
+</body>
+</html>

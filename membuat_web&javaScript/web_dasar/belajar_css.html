@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            /*ini coment*/
+            h1{ color: green;
+                margin: 2em;
+            }
+            p#first {
+                text-align: center;
+            }
+            p #second {
+                text-align: right;
+            }
+            p {
+                font-size: medium;
+                font-family: sans-serif;
+                
+            
+            }/* minggu 16 mei 2021 Styling pada html : external style sheet */
+            /*..Child Selector menggabungkan dua buah basic selector dengan menggunakan tanda greater than (>) di antara basic selector-nya.*/
+            div > p {
+                background-color: yellow;
+            }
+            //*Descendant Selector mirip seperti child selector namun hierarkinya lebih luas, karena rule akan diterapkan pada seluruh elemen yang menjadi turunannya walaupun secara tidak langsung.*/
+            div p {
+                background-color: yellowgreen;
+                text-align: center;
+            }
+
+        </style>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <!--styling pada html: embedded style sheet-->
+    </head>
+    <body>
+        <h1 style="color: green; margin-top: 2em;">Kami adalah manusia</h1>
+        <!--styling pada html: inline style sheet-->
+        <div>
+            <p>kamu adalah manusia</p>
+            <section><p>kamu adlah kamu</p></section>
+            <p>kamu dan aku</p>
+        </div>
+        <div>
+            <p>kamu kamu dan aku aku</p>
+            <section><p>aku aku dan kamu kamu</p></section>
+            <p>dia kamu dan aku</p>
+        </div>
+    </body>
+</html>

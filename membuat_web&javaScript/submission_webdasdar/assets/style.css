@@ -1,0 +1,107 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+* {
+    box-sizing: border-box;
+ }
+header{
+    color: #2F4F4F;
+    background-color: #90EE90;
+    text-align: left;
+    padding: 60px;
+    font-size: 20px;
+ }
+ nav{
+    background-color: #3CB371;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    text-align: right;
+}
+ nav a {
+     font-size: 15px;
+     font-weight: 400;
+     text-decoration: none;
+     color: white;
+ }
+ nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+ }
+ h2,h3,h4 {
+     color: #3CB371;
+ }
+ body{
+    margin: 0;
+    padding: 0;
+    }
+ .kartu {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+ }
+ main {
+    padding: 20px;
+    overflow: auto;
+ }
+ footer{
+    padding: 20px;
+    color: white;
+    background-color: #3CB371 ;
+    text-align: center;
+    font-weight: inherit;
+        }
+.profile img {
+    width: 200px;
+}
+#objek {
+    float: left;
+    width: 70%;
+}
+aside {
+    float: right;
+    width: 30%;
+    padding-left: 20px;
+
+ }
+ @media screen and (max-width: 1000px) {
+    #objek,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+    nav li {
+        display: unset;
+        list-style-type: none;
+        margin-right: 20px;
+    }
+    nav a {
+        font-size: 9px;
+        font-weight: 400;
+        text-decoration: none;
+        color: white;
+    }
+    nav {
+        text-align: center;
+    }
+ }
+ /*style untuk quiz*/
+ .container{
+    display: flex;
+ }
+ .button {
+    flex-basis: 25%;
+   
+    /* properti pendukung */
+    font-size: 1.5em;
+    text-align: center;
+    padding: 40px;
+    border: 1px solid black;
+    background: -webkit-linear-gradient(top, #d2d2d2, #ddd);
+    cursor: pointer;
+ }
+ .button:hover {
+    font-weight: bold;
+}

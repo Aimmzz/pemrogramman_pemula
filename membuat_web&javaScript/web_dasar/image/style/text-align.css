@@ -1,0 +1,15 @@
+p {
+    text-align: justify;
+}
+p #second {
+    text-align: right;
+}
+p #third {
+    text-align: left;
+}
+p #fourth {
+    text-align: justify;
+}
+body {
+    font-style: italic;
+}

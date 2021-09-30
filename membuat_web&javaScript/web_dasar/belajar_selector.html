@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            /*combinator
+            Ada empat kombinator yang dapat kita gunakan yaitu: Adjacent Sibling Selector, General Sibling Selector, Child Selector, dan Descendant Selector.
+            */
+            /*Adjacent Sibling Selector menggabungkan dua buah basic selector dengan menggunakan tanda + di antara keduanya. Contohnya seperti ini:*/
+            img + p{
+                color: green;
+            }
+            /* General Sibling Selector menggunakan tanda ~ untuk menetapkan elemenya. Contohnya seperti berikut:*/
+            img ~ p {
+                color: brown;
+            }
+            /*..Child Selector menggabungkan dua buah basic selector dengan menggunakan tanda greater than (>) di antara basic selector-nya.*/
+            div > p {
+                background-color: yellow;
+            }
+            /*Descendant Selector mirip seperti child selector namun hierarkinya lebih luas, karena rule akan diterapkan pada seluruh elemen yang menjadi turunannya walaupun secara tidak langsung.*/
+            div p {
+                background-color: yellowgreen;
+            }
+            a : hover {
+                color: red;
+            }
+            /*Pseudo-class merupakan sebuah class “semu” yang sebenarnya ada pada tiap elemen HTML. 
+            Pada contoh sebelumnya kita sudah mengetahui salah satu pseudo-class selector,
+             dengan menggunakan selector ini kita dapat memilih elemen berdasarkan class yang tidak nampak pada dokumen. Kita bisa menetapkan rule hanya ketika sebuah 
+            tautan telah dikunjungi (:visited) atau ketika sebuah elemen diarahkan dengan kursor (:hover).*/
+            /* rule akan diterapkan pada sebuah tautan yang belum pernah dikunjungi */
+a:link {
+   color: red;
+}
+ 
+/* rule akan diterapkan pada sebuah tautan yang sudah pernah dikunjungi */
+a:visited {
+   color: green;
+}
+ 
+/* rule akan diterapkan pada sebuah tautan ketika diarahkan dengan kursor */
+a:hover {
+   color: pink;
+}
+ 
+/* rule akan diterapkan pada sebuah tautan ketika ditekan */
+a:active {
+   color:orange;
+}
+/*Pseudo-elemen Selector : Selector ini biasa digunakan ketika kita ingin menambahkan sebuah konten tepat sebelum dan setelah sebuah elemen paragraf. Alhasil kita tidak perlu menuliskan struktur elemen tersebut pada berkas HTML.*/
+blockquote::before,
+blockquote::after {
+   content: '"';
+   font-size: 24px;
+   font-style: italic;
+   font-weight: bold;
+}
+/* Rule styling akan diterapkan pada karakter pertama disebuah paragraf */
+p::first-letter {
+           font-size: 32px;
+           font-weight: bold;
+           color: saddlebrown;
+}
+        </style>
+    </head>
+    <body>
+        <a href="http://elearning.bsi.ac.id/" title="elearning">kamu</a>
+        <p>Ini merupakan paragraf pertama. Rule styling tidak akan diterapkan pada elemen paragraf ini.</p>
+<img src="https://i.imgur.com/cs2BJzw.jpg" alt="Dicoding logo" width="400px">
+<p>Ini merupakan paragraf kedua dan ditetapkan setelah elemen gambar. Maka paragraf ini menerapkan rule dengan menampilkan teks berwarna hijau.</p>
+<div>
+   <p>Ini merupakan paragraf ketiga, letaknya setelah elemen gambar, namun paragraf ini dibungkus di dalam div sehingga paragraf ini tidak akan menerapkan rule styling karena tidak memiliki induk yang sama.</p>
+</div>
+<p>Ini merupakan paragraf empat. Letaknya memang setelah elemen gambar dan memiliki induk yang sama seperti elemen gambar, sehingga elemen ini akan menerapkan rule dengan menampilkan teks berwarna hijau.</p>
+<img src="https://i.imgur.com/cs2BJzw.jpg" alt="Dicoding logo" width="400px">
+<p>Ini merupakan paragraf kedua dan ditetapkan setelah elemen gambar. Maka paragraf ini seharusnya menerapkan rule dengan menampilkan teks berwarna hijau.</p>
+<p>Ini merupakan paragraf ketiga. Letaknya memang setelah elemen gambar, namun tidak diletakkan persis setelahnya, sehingga rule tidak akan diterapkan pada elemen ini.</p>
+<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eius error explicabo ipsum molestiae necessitatibus nesciunt possimus reprehenderit sed voluptates.
+     Aliquam aspernatur autem est nobis officia praesentium quas recusandae rem.</blockquote>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deserunt, dicta laudantium quae quam sequi
+        soluta vitae! A, architecto beatae, consequuntur et eveniet fuga laudantium molestias praesentium temporibus, unde
+        velit.</p>
+    </body>
+</html>
